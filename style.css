@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    font-family: 'Raleway', sans-serif;
+}
+.splash-title{
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1.2em;
+    color: #ffffff;
+    text-align: center;
+}
+.splash{
+    background: url('https://images.pexels.com/photos/36487/above-adventure-aerial-air.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    margin-top: 50px !important;
+    padding: 10% 5% 100px 5%;
+    position: relative !important;
+}
+.custom-shape-divider-bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+.custom-shape-divider-bottom svg {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100px;
+    transform: rotateY(180deg);
+}
+.custom-shape-divider-bottom .shape-fill{
+    fill: #008075;
+}
+.dp{
+    width: 100%;
+    max-width: 320px;
+}
+.abmc{
+    background-color: #008075;
+    background-image: url("pvk.png");
+    background-size: 150px;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    animation-name: verticalAnim;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: relative !important;
+    padding: 0px 0px 150px 0px !important;
+}
+.custom-shape-divider-bottom-1686818949{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1686818949 svg{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1686818949 .shape-fill{
+    fill: #c7c7c7;
+}
+h2{
+    font-size: 42px;
+    font-weight: 700;
+    color:#ffffff;
+    -webkit-text-stroke: 1px #000000;
+    text-shadow: 0px 3px 3px blue, 3px 0px 3px gold;
+    line-height: 1.4em;
+    text-align: center;
+}
+p{
+    font-size: 14px;
+    line-height: 1.7em;
+    font-weight: 400;
+}
+.companyCard{
+    width: 90%;
+    height: 500px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(255, 0, 255, 1);
+    background: url('cgalive-bg.png');
+    background-size: cover;
+    background-position: top left;
+    background-repeat: no-repeat;
+    transition: background-position 1s ease-in-out;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.companyCard:hover{
+    background-position-Y: bottom !important;
+}
+.workingTools{
+    background-color: #c7c7c7 !important;
+}
+.wtCard{
+    box-shadow: 2px 0px 5px rgba(255, 0, 255, 0.5), 0px 2px 5px rgba(0, 0, 255, 0.5);
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer !important;
+}
+.wtCard:hover{
+   transform: translateY(-30px);
+}
+.footer{
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+.navbar{
+    position: fixed !important;
+    top: 0px !important;
+    left: 0px !important;
+    z-index: 10 !important;
+}
+@keyframes verticalAnim{
+    0%   {background-position-y: bottom}
+    25%  {background-position-y: center}
+    50%  {background-position-y: top}
+    75%  {background-position-y: center}
+    100% {background-position-y: bottom}
+}
+@media (max-width:1199px){
+    .splash-title{
+        font-size: 32px !important;
+    }
+    h2{
+        font-size: 20px !important;
+    }
+}
